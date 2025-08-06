@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Clone Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #EAEDED;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #131921;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #FF9900;
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .navbar .nav-links a:hover {
+      color: #FF9900;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url("https://images.unsplash.com/photo-1581090700227-1e8e6f42236b?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      background-color: rgba(0,0,0,0.5);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    /* Products */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 5px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+    }
+
+    .product-card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .product-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      background-color: #FF9900;
+      padding: 0.5rem 1rem;
+      color: black;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .buy-btn:hover {
+      background-color: #e68a00;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #131921;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Amazon</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Today's Deals</a>
+      <a href="#">Electronics</a>
+      <a href="#">Sign In</a>
+    </div>
+  </div>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1>Big Deals, Fast Delivery</h1>
+  </section>
+
+  <!-- Products -->
+  <section class="products">
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71U3bE4P5zL._AC_UY218_.jpg" alt="Product 1">
+      <h3>Wireless Headphones</h3>
+      <p>High-quality sound with noise cancellation.</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/81fPKd-2AYL._AC_UY218_.jpg" alt="Product 2">
+      <h3>Echo Dot (5th Gen)</h3>
+      <p>Smart speaker with Alexa & improved sound.</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71ZDY57yTQL._AC_UY218_.jpg" alt="Product 3">
+      <h3>iPhone 14 Pro</h3>
+      <p>Dynamic Island. Always-On display. 48MP camera.</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/61L5QgPvgqL._AC_UY218_.jpg" alt="Product 4">
+      <h3>Samsung Galaxy Tab S8</h3>
+      <p>11-inch Android tablet with S Pen included.</p>
+      <a href="#" class="buy-btn">Buy Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Amazon Clone. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
